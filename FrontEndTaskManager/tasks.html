@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/misFuncionesTask.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+        <title>TAREAS</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <canvas> </canvas>
+            <div id="logo"> 
+                <h1>LISTA DE TAREAS PENDIENTES</h1>
+            </div> 
+            <hr>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <p>Tareas</p>
+                    <form id="formTasks" name="formTask" action="javascript:mensaje('formTasks')">
+                        <p>
+                            <label for="title">Título</label>
+                            <input type="text" name="title" id="title" placeholder="Escribe un título" required>
+                        </p>
+                        <p>
+                            <label for="description">Descripción</label>
+                            <input type="text" name="description" id="description" placeholder="Escribe una descripción" required>
+                        </p>
+                        <div class="block">
+                            <button onclick="guardarElementoTask()" type="submit" class="btn btn-info btn-lg btn-responsive" id="search">
+                                <span class="glyphicon glyphicon-saved"></span>Agregar
+                            </button>                 
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info"> 
+                    <div id="resultadoTask"><p>Tareas</p></div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
